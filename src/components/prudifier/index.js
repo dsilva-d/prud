@@ -14,16 +14,28 @@ import pruI from "../../images/pru_I.png";
 import pruJ from "../../images/pru_J.png";
 import pruK from "../../images/pru_K.png";
 import pruL from "../../images/pru_L.png";
-import pruM from "../../images/pru_M.png";
-import pruN from "../../images/pru_N.png";
+import pruM from "../../images/pru_M2.png";
+import pruN from "../../images/pru_N2.png";
+import pruO from "../../images/pru_O.png";
+import pruP from "../../images/pru_P.png";
+import pruQ from "../../images/pru_Q.png";
+import pruR from "../../images/pru_R.png";
+import pruS from "../../images/pru_S.png";
+import pruT from "../../images/pru_T.png";
+import pruU from "../../images/pru_U.png";
+import pruV from "../../images/pru_V.png";
+import pruW from "../../images/pru_W.png";
+import pruX from "../../images/pru_X.png";
+import pruY from "../../images/pru_Y.png";
+import pruZ from "../../images/pru_Z.png";
 
 const Prudify = () => {
  const [windowAlpha, setWindowAlpha] = useState('')
  const userInputAlpha = useRef();
- var windowsImages = [blank,blank,blank,blank,blank,blank]
- for(let i = 0; i <= 5; i++) {
-    console.log("Current WindowAlpha: " + windowAlpha.substr(i, i + 1) );
 
+ var windowsImages = [blank,blank,blank,blank,blank,blank]
+
+ for(let i = 0; i <= 5; i++) {
     switch(windowAlpha.charAt(i).toLowerCase()) {
         case "a":
             windowsImages[i] = pruA;
@@ -67,14 +79,54 @@ const Prudify = () => {
         case "n":
             windowsImages[i] = pruN;
             break;
+        case "o":
+            windowsImages[i] = pruO;
+            break;
+        case "p":
+            windowsImages[i] = pruP;
+            break;
+        case "q":
+            windowsImages[i] = pruQ;
+            break;
+        case "r":
+            windowsImages[i] = pruR;
+            break;
+        case "s":
+            windowsImages[i] = pruS;
+            break;
+        case "t":
+            windowsImages[i] = pruT;
+            break;
+        case "u":
+            windowsImages[i] = pruU;
+            break;
+        case "v":
+            windowsImages[i] = pruV;
+            break;
+        case "w":
+            windowsImages[i] = pruW;
+            break;
+        case "x":
+            windowsImages[i] = pruX;
+            break;
+        case "y":
+            windowsImages[i] = pruY;
+            break;
+        case "z":
+            windowsImages[i] = pruZ;
+            break;
         case "":
             windowsImages[i] = blank;
             break;
         default:
             windowsImages[i] = blank;
     }
-    console.log("Current windowsImage:" + windowsImages[i] );
+
  }
+
+  useEffect(() => {
+      localStorage.setItem('windowAlpha', windowAlpha)
+  }, [windowAlpha])
 
  return (
    <div>
@@ -83,7 +135,7 @@ const Prudify = () => {
            <img style={{position: 'absolute', width: '730px', height: '470px', left: '0px', top: '12px'}} src={windowsImages[3]}/>
            <img style={{position: 'absolute', width: '730px', height: '470px', left: '0px', top: '-96px'}} src={windowsImages[0]}/>
            <img style={{position: 'absolute', width: '730px', height: '470px', left: '52px', top: '-94px'}} src={windowsImages[1]}/>
-           <img style={{position: 'absolute', width: '730px', height: '470px', left: '102px', top: '-90px'}} src={windowsImages[2]}/>
+           <img style={{position: 'absolute', width: '730px', height: '470px', left: '102px', top: '-92px'}} src={windowsImages[2]}/>
            <img style={{position: 'absolute', width: '730px', height: '470px', left: '52px', top: '14px'}} src={windowsImages[4]}/>
            <img style={{position: 'absolute', width: '730px', height: '470px', left: '102px', top: '16px'}} src={windowsImages[5]}/>
        </div>
