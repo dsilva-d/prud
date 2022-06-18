@@ -144,7 +144,7 @@ const Prudify = () => {
                onChange={event => setWindowAlpha('' + event.target.value)}
                className="search-float"
                type="text"
-               placeholder="Prudify..."
+               placeholder="Enter your Pru-Text..."
                title="Prudifier"/>
    </div>
  );

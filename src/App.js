@@ -10,7 +10,7 @@ function App() {
   <div style={{ backgroundImage:`url(${pruBack})`}}>
     <div className="App">
       <header className="App-header">
-        <h1>PruText</h1>
+        <h1>P R U I F Y</h1>
         <Prudifier/>
       </header>
     </div>
