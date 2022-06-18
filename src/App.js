@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import logo from './images/logo.svg';
+import haircut from './images/haircut.jpg';
+import pruBack from './images/darkPru.png';
 import './App.css';
+import Prudifier from "./components/prudifier";
+import './index.css';
 
 function App() {
   return (
+  <div style={{ backgroundImage:`url(${pruBack})`}}>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>PruText</h1>
+        <Prudifier/>
       </header>
+    </div>
     </div>
   );
 }
 
 export default App;
+
+
+//<a
+//          className="App-link"
+//          href="https://reactjs.org"
+//          target="_blank"
+//          rel="noopener noreferrer"
+//        >

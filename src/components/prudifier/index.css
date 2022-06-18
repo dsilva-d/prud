@@ -1,0 +1,8 @@
+.search-float {
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+    width: 90%;
+    font-size: 30px;
+    height: 40px;
+}
