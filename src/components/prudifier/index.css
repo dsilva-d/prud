@@ -6,3 +6,53 @@
     font-size: 30px;
     height: 40px;
 }
+
+
+.first-letter {
+    position: absolute;
+    width: 730px;
+    height: 470px;
+    left: 0px;
+    top: -96px;
+}
+.second-letter {
+    position: absolute;
+    width: 730px;
+    height: 470px;
+    left: 52px;
+    top: -94px;
+}
+.third-letter {
+    position: absolute;
+    width: 730px;
+    height: 470px;
+    left: 102px;
+    top: -92px;
+}
+.fourth-letter {
+    position: absolute;
+    width: 730px;
+    height: 470px;
+    left: 0px;
+    top: 12px;
+}
+.fifth-letter {
+    position: absolute;
+    width: 730px;
+    height: 470px;
+    left: 52px;
+    top: 14px;
+}
+.sixth-letter {
+    position: absolute;
+    width: 730px;
+    height: 470px;
+    left: 102px;
+    top: 16px;
+}
+.blank-pru {
+    alignSelf: center;
+    object-fit: fill;
+    height: 492px;
+    width: 720px;
+}

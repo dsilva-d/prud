@@ -129,23 +129,25 @@ const Prudify = () => {
   }, [windowAlpha])
 
  return (
+   <div style={{ backgroundImage:`url(${pruBack})`}}>
    <div>
        <link href="index.css" rel="stylesheet"/>
-       <div style={{position: 'relative', top: '0', left: '0'}}>
-           <img style={{position: 'absolute', width: '730px', height: '470px', left: '0px', top: '12px'}} src={windowsImages[3]}/>
-           <img style={{position: 'absolute', width: '730px', height: '470px', left: '0px', top: '-96px'}} src={windowsImages[0]}/>
-           <img style={{position: 'absolute', width: '730px', height: '470px', left: '52px', top: '-94px'}} src={windowsImages[1]}/>
-           <img style={{position: 'absolute', width: '730px', height: '470px', left: '102px', top: '-92px'}} src={windowsImages[2]}/>
-           <img style={{position: 'absolute', width: '730px', height: '470px', left: '52px', top: '14px'}} src={windowsImages[4]}/>
-           <img style={{position: 'absolute', width: '730px', height: '470px', left: '102px', top: '16px'}} src={windowsImages[5]}/>
+       <div style={{position: 'relative', top: '0', left: '0', }}>
+           <img className="fourth-letter" src={windowsImages[3]}/>
+           <img className="first-letter" src={windowsImages[0]}/>
+           <img className="second-letter" src={windowsImages[1]}/>
+           <img className="third-letter" src={windowsImages[2]}/>
+           <img className="fifth-letter" src={windowsImages[4]}/>
+           <img className="sixth-letter" src={windowsImages[5]}/>
        </div>
-       <img style={{alignSelf: 'center', height: '492px', width: '720px'}} src={pruBack} alt="logo" />
+       <img className="blank-pru" src={pruBack} alt="logo" />
         <input ref={userInputAlpha}
                onChange={event => setWindowAlpha('' + event.target.value)}
                className="search-float"
                type="text"
                placeholder="Enter your Pru-Text..."
                title="Prudifier"/>
+   </div>
    </div>
  );
 };
