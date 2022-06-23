@@ -15,7 +15,7 @@ import pruI from "../../images/pru_I.png";
 import pruJ from "../../images/pru_J.png";
 import pruK from "../../images/pru_K.png";
 import pruL from "../../images/pru_L.png";
-import pruM from "../../images/pru_M2.png";
+import pruM from "../../images/pru_M3.png";
 import pruN from "../../images/pru_N2.png";
 import pruO from "../../images/pru_O.png";
 import pruP from "../../images/pru_P.png";
@@ -25,11 +25,37 @@ import pruS from "../../images/pru_S.png";
 import pruT from "../../images/pru_T.png";
 import pruU from "../../images/pru_U.png";
 import pruV from "../../images/pru_V.png";
-import pruW from "../../images/pru_W.png";
+import pruW from "../../images/pru_W2.png";
 import pruX from "../../images/pru_X.png";
 import pruY from "../../images/pru_Y.png";
 import pruZ from "../../images/pru_Z.png";
 import smallA from "../../images/smallA.png";
+import smallB from "../../images/smallB.png";
+import smallC from "../../images/smallC.png";
+import smallD from "../../images/smallD.png";
+import smallE from "../../images/smallE.png";
+import smallF from "../../images/smallF.png";
+import smallG from "../../images/smallG.png";
+import smallH from "../../images/smallH.png";
+import smallI from "../../images/smallI.png";
+import smallJ from "../../images/smallJ.png";
+import smallK from "../../images/smallK.png";
+import smallL from "../../images/smallL.png";
+import smallM from "../../images/smallM.png";
+import smallN from "../../images/smallN.png";
+import smallO from "../../images/smallO.png";
+import smallP from "../../images/smallP.png";
+import smallQ from "../../images/smallQ.png";
+import smallR from "../../images/smallR.png";
+import smallS from "../../images/smallS.png";
+import smallT from "../../images/smallT.png";
+import smallU from "../../images/smallU.png";
+import smallV from "../../images/smallV.png";
+import smallW from "../../images/smallW.png";
+import smallX from "../../images/smallX.png";
+import smallY from "../../images/smallY.png";
+import smallZ from "../../images/smallZ.png";
+
 
 const Prudify = () => {
  const [windowAlpha, setWindowAlpha] = useState('');
@@ -73,78 +99,103 @@ var windowsImagesRow1 = [blank,blank,blank,blank];
                 break;
             case "b":
                 windowsImagesRow1[i] = pruB;
+                windowsImagesSmallRow1[i] = smallB;
                 break;
             case "c":
                 windowsImagesRow1[i] = pruC;
+                windowsImagesSmallRow1[i] = smallC;
                 break;
             case "d":
                 windowsImagesRow1[i] = pruD;
+                windowsImagesSmallRow1[i] = smallD;
                 break;
             case "e":
                 windowsImagesRow1[i] = pruE;
+                windowsImagesSmallRow1[i] = smallE;
                 break;
             case "f":
                 windowsImagesRow1[i] = pruF;
+                windowsImagesSmallRow1[i] = smallF;
                 break;
             case "g":
                 windowsImagesRow1[i] = pruG;
+                windowsImagesSmallRow1[i] = smallG;
                 break;
             case "h":
                 windowsImagesRow1[i] = pruH;
+                windowsImagesSmallRow1[i] = smallH;
                 break;
             case "i":
                 windowsImagesRow1[i] = pruI;
+                windowsImagesSmallRow1[i] = smallI;
                 break;
             case "j":
                 windowsImagesRow1[i] = pruJ;
+                windowsImagesSmallRow1[i] = smallJ;
                 break;
             case "k":
                 windowsImagesRow1[i] = pruK;
+                windowsImagesSmallRow1[i] = smallK;
                 break;
             case "l":
                 windowsImagesRow1[i] = pruL;
+                windowsImagesSmallRow1[i] = smallL;
                 break;
             case "m":
                 windowsImagesRow1[i] = pruM;
+                windowsImagesSmallRow1[i] = smallM;
                 break;
             case "n":
                 windowsImagesRow1[i] = pruN;
+                windowsImagesSmallRow1[i] = smallN;
                 break;
             case "o":
                 windowsImagesRow1[i] = pruO;
+                windowsImagesSmallRow1[i] = smallO;
                 break;
             case "p":
                 windowsImagesRow1[i] = pruP;
+                windowsImagesSmallRow1[i] = smallP;
                 break;
             case "q":
                 windowsImagesRow1[i] = pruQ;
+                windowsImagesSmallRow1[i] = smallQ;
                 break;
             case "r":
                 windowsImagesRow1[i] = pruR;
+                windowsImagesSmallRow1[i] = smallR;
                 break;
             case "s":
                 windowsImagesRow1[i] = pruS;
+                windowsImagesSmallRow1[i] = smallS;
                 break;
             case "t":
                 windowsImagesRow1[i] = pruT;
+                windowsImagesSmallRow1[i] = smallT;
                 break;
             case "u":
                 windowsImagesRow1[i] = pruU;
+                windowsImagesSmallRow1[i] = smallU;
                 break;
             case "v":
                 windowsImagesRow1[i] = pruV;
+                windowsImagesSmallRow1[i] = smallV;
                 break;
             case "w":
                 windowsImagesRow1[i] = pruW;
+                windowsImagesSmallRow1[i] = smallW;
                 break;
             case "x":
                 windowsImagesRow1[i] = pruX;
+                windowsImagesSmallRow1[i] = smallX;
                 break;
             case "y":
                 windowsImagesRow1[i] = pruY;
+                windowsImagesSmallRow1[i] = smallY;
                 break;
             case "z":
                 windowsImagesRow1[i] = pruZ;
+                windowsImagesSmallRow1[i] = smallZ;
                 break;
             case "":
                 windowsImagesRow1[i] = blank;
@@ -157,7 +208,7 @@ var windowsImagesRow1 = [blank,blank,blank,blank];
     }
 
     // If last letter in row has been assigned small or 3rd letter is not assigned
-    if(windowAlpha.length < 4 || windowAlpha.charAt(2) === " ") {
+    if(windowAlpha.length < 4 || windowAlpha.charAt(2) === " " || windowAlpha.charAt(3) === " ") {
     return(<>
        <img className="first-letter" src={windowsImagesRow1[0]}/>
        <img className="second-letter" src={windowsImagesRow1[1]}/>
@@ -192,78 +243,103 @@ function bottomRowRender(windowAlpha) {
                 break;
             case "b":
                 windowsImagesRow2[i] = pruB;
+                windowsImagesSmallRow2[i] = smallB;
                 break;
             case "c":
                 windowsImagesRow2[i] = pruC;
+                windowsImagesSmallRow2[i] = smallC;
                 break;
             case "d":
                 windowsImagesRow2[i] = pruD;
+                windowsImagesSmallRow2[i] = smallD;
                 break;
             case "e":
                 windowsImagesRow2[i] = pruE;
+                windowsImagesSmallRow2[i] = smallE;
                 break;
             case "f":
                 windowsImagesRow2[i] = pruF;
+                windowsImagesSmallRow2[i] = smallF;
                 break;
             case "g":
                 windowsImagesRow2[i] = pruG;
+                windowsImagesSmallRow2[i] = smallG;
                 break;
             case "h":
                 windowsImagesRow2[i] = pruH;
+                windowsImagesSmallRow2[i] = smallH;
                 break;
             case "i":
                 windowsImagesRow2[i] = pruI;
+                windowsImagesSmallRow2[i] = smallI;
                 break;
             case "j":
                 windowsImagesRow2[i] = pruJ;
+                windowsImagesSmallRow2[i] = smallJ;
                 break;
             case "k":
                 windowsImagesRow2[i] = pruK;
+                windowsImagesSmallRow2[i] = smallK;
                 break;
             case "l":
                 windowsImagesRow2[i] = pruL;
+                windowsImagesSmallRow2[i] = smallL;
                 break;
             case "m":
                 windowsImagesRow2[i] = pruM;
+                windowsImagesSmallRow2[i] = smallM;
                 break;
             case "n":
                 windowsImagesRow2[i] = pruN;
+                windowsImagesSmallRow2[i] = smallN;
                 break;
             case "o":
                 windowsImagesRow2[i] = pruO;
+                windowsImagesSmallRow2[i] = smallO;
                 break;
             case "p":
                 windowsImagesRow2[i] = pruP;
+                windowsImagesSmallRow2[i] = smallP;
                 break;
             case "q":
                 windowsImagesRow2[i] = pruQ;
+                windowsImagesSmallRow2[i] = smallQ;
                 break;
             case "r":
                 windowsImagesRow2[i] = pruR;
+                windowsImagesSmallRow2[i] = smallR;
                 break;
             case "s":
                 windowsImagesRow2[i] = pruS;
+                windowsImagesSmallRow2[i] = smallS;
                 break;
             case "t":
                 windowsImagesRow2[i] = pruT;
+                windowsImagesSmallRow2[i] = smallT;
                 break;
             case "u":
                 windowsImagesRow2[i] = pruU;
+                windowsImagesSmallRow2[i] = smallU;
                 break;
             case "v":
                 windowsImagesRow2[i] = pruV;
+                windowsImagesSmallRow2[i] = smallV;
                 break;
             case "w":
                 windowsImagesRow2[i] = pruW;
+                windowsImagesSmallRow2[i] = smallW;
                 break;
             case "x":
                 windowsImagesRow2[i] = pruX;
+                windowsImagesSmallRow2[i] = smallX;
                 break;
             case "y":
                 windowsImagesRow2[i] = pruY;
+                windowsImagesSmallRow2[i] = smallY;
                 break;
             case "z":
                 windowsImagesRow2[i] = pruZ;
+                windowsImagesSmallRow2[i] = smallZ;
                 break;
             case "":
                 windowsImagesRow2[i] = blank;
@@ -275,10 +351,6 @@ function bottomRowRender(windowAlpha) {
         }
     }
 
-
-
-
-
     // If last letter in row has been assigned small
     if(!windowsImagesSmallRow2[3].toString().includes('small')) {
         return(<>
@@ -288,7 +360,6 @@ function bottomRowRender(windowAlpha) {
            </>
            );
     } else {
-    console.log("Small!")
         return(
         <>
            <img className="fifth-letter-small" src={windowsImagesSmallRow2[0]}/>
