@@ -47,9 +47,76 @@
     position: absolute;
     width: 730px;
     height: 470px;
-    left: 102px;
-    top: 16px;
+    left: 104px;
+    top: 15px;
 }
+
+
+
+
+.first-letter-small {
+    position: absolute;
+    width: 38px;
+    height: 107px;
+    left: 280px;
+    top: 160px;
+}
+.second-letter-small {
+    position: absolute;
+    width: 38px;
+    height: 105px;
+    left: 319px;
+    top: 162px;
+}
+.third-letter-small {
+    position: absolute;
+    width: 38px;
+    height: 102px;
+    left: 357px;
+    top: 165px;
+}
+.fourth-letter-small {
+    position: absolute;
+    width: 38px;
+    height: 101px;
+    left: 395px;
+    top: 166px;
+}
+.fifth-letter-small {
+    position: absolute;
+    width: 39px;
+    height: 105px;
+    left: 280px;
+    top: 270px;
+}
+.sixth-letter-small {
+    position: absolute;
+    width: 38px;
+    height: 105px;
+    left: 319px;
+    top: 270px;
+}
+.seventh-letter-small {
+    position: absolute;
+    width: 38px;
+    height: 105px;
+    left: 357px;
+    top: 271px;
+}
+.eighth-letter-small {
+    position: absolute;
+    width: 38px;
+    height: 104px;
+    left: 395px;
+    top: 272px;
+}
+
+
+
+
+
+
+
 .blank-pru {
     alignSelf: center;
     object-fit: fill;
