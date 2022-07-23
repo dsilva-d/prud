@@ -235,6 +235,13 @@ function bottomRowRender(windowAlpha) {
     } else {
         windowAlpha = windowAlpha.substr(4, windowAlpha.length);
     }
+
+    if(windowAlpha.charAt(0) === " ") {
+        windowAlpha = windowAlpha.substr(1, windowAlpha.length);
+    } else {
+        windowAlpha = windowAlpha.substr(0, windowAlpha.length);
+    }
+
     for(let i = 0; i <= 3; i++) {
         switch(windowAlpha.charAt(i).toLowerCase()) {
             case "a":
