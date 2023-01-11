@@ -79,7 +79,8 @@ const Prudify = () => {
                className="search-float"
                type="text"
                placeholder="Enter your Pru-Text..."
-               title="Prudifier"/>
+               title="Prudifier"
+               maxLength={8}/>
    </div>
    </div>
  );
