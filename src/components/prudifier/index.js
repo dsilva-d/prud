@@ -58,33 +58,42 @@ import smallZ from "../../images/smallZ.png";
 
 
 const Prudify = () => {
- const [windowAlpha, setWindowAlpha] = useState('');
- const userInputAlpha = useRef();
-
-  useEffect(() => {
-      localStorage.setItem('windowAlpha', windowAlpha)
-  }, [windowAlpha])
-
- return (
-   <div style={{ backgroundImage:`url(${pruBack})`}}>
-   <div>
-       <link href="index.css" rel="stylesheet"/>
-       <div style={{position: 'relative', top: '0', left: '0', }}>
-           {topRowRender(windowAlpha)}
-           {bottomRowRender(windowAlpha)}
-       </div>
-       <img className="blank-pru" src={pruBack} alt="logo" />
-        <input ref={userInputAlpha}
-               onChange={event => setWindowAlpha('' + event.target.value)}
-               className="search-float"
-               type="text"
-               placeholder="Enter your Pru-Text..."
-               title="Prudifier"
-               maxLength={8}/>
-   </div>
-   </div>
- );
-};
+    const [windowAlpha, setWindowAlpha] = useState('');
+   
+    useEffect(() => {
+        localStorage.setItem('windowAlpha', windowAlpha);
+    }, [windowAlpha]);
+   
+    const handleInputChange = (event) => {
+        const inputValue = event.target.value;
+        const nonSpaceChars = inputValue.replace(/ /g, '');
+   
+        // Only update windowAlpha if the non-space characters are less than or equal to 8
+        if (nonSpaceChars.length <= 8) {
+            setWindowAlpha(inputValue);
+        }
+    };
+    console.log("window: " + windowAlpha)
+    return (
+      <div style={{ backgroundImage:`url(${pruBack})`}}>
+        <div>
+          <link href="index.css" rel="stylesheet"/>
+          <div style={{position: 'relative', top: '0', left: '0', }}>
+              {topRowRender(windowAlpha)}
+              {bottomRowRender(windowAlpha)}
+          </div>
+          <img className="blank-pru" src={pruBack} alt="logo" />
+          <input onChange={handleInputChange}
+                 value={windowAlpha}
+                 className="search-float"
+                 type="text"
+                 placeholder="Enter your Pru-Text..."
+                 title="Prudifier"/>
+        </div>
+      </div>
+    );
+   };
+      
 
 
 function topRowRender(windowAlpha) {
@@ -379,3 +388,4 @@ function bottomRowRender(windowAlpha) {
 }
 
 export default Prudify;
+
